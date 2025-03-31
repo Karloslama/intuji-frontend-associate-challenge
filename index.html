@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+
+  <div class="dashboard-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header">
+          <span class="sidebar-title">Finance Dashboard</span>
+          <button class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span class="toggle-icon">☰</span>
+          </button>
+        </div>
+    
+        <!-- Navigation Menu -->
+        <div class="scrollable-content">
+          <ul class="nav-menu">
+            <li class="nav-item active">
+              <img src="/assets/element-4.png" alt="Dashboard" class="nav-icon">
+              <span class="nav-text">Dashboard</span>
+            </li>
+            <li class="nav-item">
+              <img src="/assets/Calendar.png" alt="Schedule" class="nav-icon">
+              <span class="nav-text">Schedule</span>
+            </li>
+            <li class="nav-item">
+              <img src="/assets/sms.png" alt="Message" class="nav-icon">
+              <span class="nav-text">Message</span>
+            </li>
+            <li class="nav-item">
+              <img src="/assets/Chart.png" alt="Analytics" class="nav-icon">
+              <span class="nav-text">Analytics</span>
+            </li>
+            <li class="nav-item">
+              <img src="/assets/profile-2user.png" alt="Team" class="nav-icon">
+              <span class="nav-text">Team</span>
+            </li>
+            <li class="divider"></li>
+            <li class="nav-item">
+              <img src="/assets/user.png" alt="Profile" class="nav-icon">
+              <span class="nav-text">Profile</span>
+            </li>
+            <li class="nav-item">
+              <img src="/assets/setting.png" alt="Settings" class="nav-icon">
+              <span class="nav-text">Settings</span>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Logout Section -->
+        <div class="logout-container">
+          <div class="nav-item">
+            <img src="/assets/info-circle.png" alt="Help" class="nav-icon">
+            <span class="nav-text">Help</span>
+          </div>
+          <button class="logout-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/126/126467.png" alt="Logout" class="nav-icon">
+            <span class="nav-text">Logout</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <div class="search-container">
+          <div class="search-bar">
+            <button class="search-btn">
+              <img src="/assets/search-normal.png" alt="Search" class="search-icon">
+            </button>
+            <input type="text" placeholder="Search here..." class="search-input">
+          </div>
+          <div class="user-menu">
+            <div class="notification" data-tooltip="Notifications">
+              <img src="/assets/notification-bing.png" alt="notifications" class="notification-icon">
+            </div>
+            <div class="message" data-tooltip="Messages">
+              <img src="/assets/message-text.png" alt="message" class="message-icon">
+            </div>
+            <div class="user-profile" data-tooltip="Profile">
+              <img src="https://ui-avatars.com/api/?name=Mirie+Kiritani&background=random" alt="User Avatar"
+                class="user-avatar">
+              <span class="user-name">Mirie Kiritani</span>
+              <img src="/assets/arrow-down.png" alt="arrow-down" class="arrow-down">
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+
+      <!-- Dashboard Container -->
+      <div class="dashboard-grid">
+        <section class="overview-section">
+          <h1 class="section-title">Overview</h1>
+          <div class="financial-grid">
+            <!-- First Row -->
+            <div class="balance-card">
+              <div class="card-header">
+                <div class="header-content">
+                  <img src="/assets/empty-wallet.png" alt="Wallet" class="wallet-icon">
+                  <div class="savings-title">
+                    <h3>Your Balance</h3>
+                    <span class="percentage positive">↑15% compared to last month</span>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="amount-container">
+                <h1>$28,891.138 <span class="arrow">→</span></h1>
+              </div>
+              <div class="balance-actions">
+                <button class="btn-transfer">Transfer</button>
+                <button class="btn-add-money">Add Money</button>
+              </div>
+            </div>
+
+            <div class="summary-item savings">
+              <div class="card-header">
+                <div class="header-content">
+                  <img src="/assets/save-2.png" alt="Savings" class="save-icon">
+                  <div class="savings-title">
+                    <h3>Saving</h3>
+                    <span class="percentage positive">↑10% compared to last month</span>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="amount-container">
+                <h1>$1,050.44 <span class="arrow">→</span></h1>
+              </div>
+
+              <div class="savings-actions">
+                <button class="btn-deposit">Deposit</button>
+                <button class="btn-withdraw">Withdraw</button>
+              </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="summary-item expenses">
+              <div class="card-header">
+                <div class="header-content">
+                  <img src="/assets/direct-down.png" alt="Expenses" class="expense-icon">
+                  <div class="expenses-title">
+                    <h3>Expenses</h3>
+                    <span class="percentage negative">↓2% compared to last month</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="divider"></div>
+              <div class="amount-container">
+                <h1>$200.31 <span class="arrow">→</span></h1>
+              </div>
+            </div>
+
+            <div class="summary-item incomes">
+              <div class="card-header">
+                <div class="header-content">
+                  <img src="/assets/direct-up.png" alt="Expenses" class="expense-icon">
+                  <div class="income-title">
+                    <h3>Incomes</h3>
+                    <span class="percentage positive">↑8% compared to last month</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="divider"></div>
+              <div class="amount-container">
+                <h1>$21,121.0 <span class="arrow">→</span></h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Saving Plan section -->
+        <section class="saving-plan-section">
+          <div class="section-header">
+            <h3>Saving Plan</h3>
+            <a href="#" class="see-all">See All</a>
+          </div>
+          <div class="divider">
+          </div>
+
+          <div class="plan-items">
+            <!-- Bali Vacation -->
+            <div class="plan-item">
+              <div class="plan-info">
+                <h3 class="plan-title">Bali Vacation</h3>
+                <span class="plan-target">Target: August 25 2022</span>
+              </div>
+              <div class="plan-progress">
+                <div class="progress-amount">
+                  $1,950.21 / <sub>$4,000</sub>
+                </div>
+                <div class="progress-percent">48%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 48%; background-color: #4361ee;"></div>
+              </div>
+            </div>
+
+            <!-- New Gadget -->
+            <div class="plan-item">
+              <div class="plan-info">
+                <h3 class="plan-title">New Gadget</h3>
+                <span class="plan-target">Target: August 25 2022</span>
+              </div>
+              <div class="plan-progress">
+                <div class="progress-amount">
+                  $790.21 / <sub>$1,000</sub>
+                </div>
+                <div class="progress-percent">79%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 79%; background-color: #F9BA33;"></div>
+              </div>
+            </div>
+
+            <!-- Charity -->
+            <div class="plan-item">
+              <div class="plan-info">
+                <h3 class="plan-title">Charity</h3>
+                <span class="plan-target">Target: August 25 2022</span>
+              </div>
+              <div class="plan-progress">
+                <div class="progress-amount">
+                  $32,111 / <sub>$100</sub>
+                </div>
+                <div class="progress-percent">32%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 32%; background-color: #3BBB6E;"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </section>
+
+      <!-- Analytics section -->
+      <div class="analytics-grid">
+        <section class="analytics-section">
+          <div class="analytics-card">
+            <div class="analytics-header">
+              <h2>Analytics</h2>
+              <div class="chart-header-right">
+                <div class="chart-legend">
+                  <div class="legend-item">
+                    <span class="legend-color blue"></span>
+                    <span>Label1</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-color teal"></span>
+                    <span>Label2</span>
+                  </div>
+                </div>
+
+                <div class="period-select">
+                  <select class="period-dropdown" id="periodSelect">
+                    <option value="week">Weekly</option>
+                    <option value="month">Monthly</option>
+                    <option value="year">Yearly</option>
+                    <!-- <img src="/assets/Vector.png" alt="" srcset=""> -->
+
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="chart-container">
+              <canvas id="analyticsChart"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- recent-transactions-section -->
+        <section class="recent-transactions-section">
+          <div class="section-header">
+            <h3>Recent Transactions</h3>
+            <a href="#" class="see-all">See All</a>
+          </div>
+          <div class="divider"></div>
+          <div class="transactions-list">
+            <div class="transaction-item">
+              <div class="transaction-info">
+                <div class="transaction-icon">F</div>
+                <div>
+                  <div class="transaction-name">Figma</div>
+                  <div class="transaction-date">August 30, 2022</div>
+                </div>
+              </div>
+              <div class="transaction-status">
+                <p class="amount">$100</p>
+                <p class="status completed">Completed</p>
+              </div>
+            </div>
+
+            <div class="transaction-item">
+              <div class="transaction-info">
+                <div class="transaction-icon">Y</div>
+                <div>
+                  <div class="transaction-name">YouTube</div>
+                  <div class="transaction-date">August 30, 2022</div>
+                </div>
+              </div>
+              <div class="transaction-status">
+                <p class="amount">$120</p>
+                <p class="status completed">Completed</p>
+              </div>
+            </div>
+
+            <div class="transaction-item">
+              <div class="transaction-info">
+                <div class="transaction-icon">S</div>
+                <div>
+                  <div class="transaction-name">Spotify</div>
+                  <div class="transaction-date">August 30, 2022</div>
+                </div>
+              </div>
+              <div class="transaction-status">
+                <p class="amount">$15</p>
+                <p class="status completed">Completed</p>
+              </div>
+            </div>
+
+            <div class="transaction-item">
+              <div class="transaction-info">
+                <div class="transaction-icon">F</div>
+                <div>
+                  <div class="transaction-name">Freepk</div>
+                  <div class="transaction-date">August 30, 2022</div>
+                </div>
+              </div>
+              <div class="transaction-status">
+                <p class="amount">$300</p>
+                <p class="status completed">Completed</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
